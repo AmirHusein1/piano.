@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(52, 201, 77);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.piano {
+    display: flex;
+    justify-content: center;
+}
+
+.black-keys {
+    position: absolute;
+    height: 300px;
+    color: white;
+    display: flex;
+    z-index: 2;
+}
+
+.black-keys > kbd {
+    background-color: black;
+}
+
+.white-keys {
+    height: 350px;
+    background-color: white;
+    display: flex;
+}
+
+kbd {
+    align-items: flex-end;
+    border: 1px solid grey;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    padding-bottom: 12px;
+    width: 60px;
+}
+
+#T {
+    margin-left: 60px;
+}
